@@ -1,0 +1,293 @@
+/* Global */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body{  
+    
+    background: url('images/apple_singapore_orchard_road_120_foot_glass_exterior.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 4.4rem;
+    background-color: rgba(0,0,0, .8);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list{
+    list-style: none;
+    margin: 0 -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-list-moblie{
+    display: none;
+}
+
+ .nav-link{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity .5sec;
+}
+
+.nav-link:hover{
+    opacity: .7;
+}
+
+.nav-link-apple{
+    width: 1.6rem;height: 4.4rem;
+    background: url("images/apple2.png") center no-repeat;
+} 
+
+.nav-link-search{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("images/search4.png") center no-repeat;
+}
+
+.sign-in-button{
+    width: 8%;
+    padding: 5px;
+    background: rgba(17,107,143);
+    border-radius: 6px;
+    border: none;
+}
+
+.sign-in-button a{
+    text-decoration: none; 
+    color: rgb(255, 255, 255) ;
+}
+
+.sign-in-button:hover{
+    background-color: rgba(17,107,143, .8);
+}
+
+.header-section{
+    margin-top: 16rem;
+}
+
+.container1{
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0, .3);
+}
+
+h1{
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+form input{
+    width: 92%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #e4e4e4;
+}
+
+.sign-up-button{
+    font-size: 1rem;
+    padding: 10px 0;
+    border: none;
+    width: 92%;
+    margin-top: 1.5rem;
+    padding: 10px 0;
+    border-radius: 10px;
+    background: rgba(17,107,143);
+    cursor: pointer;
+    color: #fff;
+}
+
+.sign-up-button a {
+    color: #fff;
+}
+
+.sign-up-button:hover{
+    background: rgba(17,107,143, .8);
+}
+
+input:focus{
+    border:1px solid rgba(192,192,192)
+}
+
+.terms{
+    margin-top: 0.2rem;
+}
+
+.terms-input{
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.terms label{
+    font-size: 0.7 rem;
+}
+
+.terms a{
+    color: rgba(17,107,143);
+    text-decoration: none;
+}
+
+.terms a:hover{
+    text-decoration: underline;
+}
+
+.member{
+    margin-top: 1.5rem;
+}
+.member a{
+    color: rgba(17,107,143);
+    text-decoration: none;
+}
+
+.member a:hover{
+    text-decoration: underline;
+}
+
+.footer-section{
+    margin-top: 29.96vh;
+}
+
+.container2{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer {
+  padding: 70px 0;
+  background-color: rgba(0,0,0, .5);
+  backdrop-filter: blur(20px);
+
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #f3f0f0;
+    
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+ 
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #dbd8d8;
+    text-decoration: none;
+    font-weight: 300;
+    
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+ 
+.footer-col .social-icon a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius:  50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-icon a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*respnsive*/
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+
